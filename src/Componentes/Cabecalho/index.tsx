@@ -1,11 +1,11 @@
-import'./cabecalho.scss';
+import './cabecalho.scss'
 
 function Cabecalho(){
     return(
         <header>
-            <img src="./Imagens/Capys.png"></img>
+            <img src="../Imagens/Capys.png" />
         </header>
     )
 }
 
-export default Cabecalho
+export default Cabecalho;

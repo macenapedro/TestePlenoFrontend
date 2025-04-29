@@ -1,23 +1,18 @@
-import { useState } from 'react'
-import styled from 'styled-components';
-import Cabecalho from './Componentes/Cabecalho';
+import { useState, useEffect } from 'react'
+import Main from './Componentes/Main'
 
-const MainEstilo = styled.div`
-    background: #01121f;
-`
 
 function App() {
-  // const [count, setCount] = useState(0)
-  // setCount(1);
-  // console.log(count);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    setCount(1);
+  }, []); // executa apenas uma vez após a primeira renderização
+
+  console.log(count);
   return (
-    <MainEstilo>
-      <Cabecalho />
-      <div>
-        <h3>Teste Frontend PL </h3>
-      </div>
-    </MainEstilo>
+      <Main/>
   )
 }
 
-export default App
+export default App;

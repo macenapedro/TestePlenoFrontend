@@ -1,0 +1,27 @@
+.cabecalho-final{
+    display: flex;
+    flex-direction: column;
+}
+.cima{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.txt-final{
+    display: flex;
+}
+.mensagem{
+    color: grey;
+    display: flex;
+}
+
+.botao-sair .sair{
+    padding: 90% 100%;
+}
+.sair{
+    background: #021a30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
